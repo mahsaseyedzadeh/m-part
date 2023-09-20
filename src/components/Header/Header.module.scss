@@ -1,0 +1,19 @@
+@import "src/styles/mixins.module";
+.wrapper{
+
+  border-bottom:1px solid $surface-400;
+}
+.container{
+  @include container;
+  display: flex;
+  align-items: center;
+}
+.leftSide{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  gap: $gutter ;
+
+}
+

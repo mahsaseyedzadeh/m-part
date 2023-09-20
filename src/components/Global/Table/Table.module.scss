@@ -1,0 +1,57 @@
+@import "/src/styles/variables.module";
+.tableWrapper{
+  border-spacing:0;
+  width: 100%;
+  border-radius: $border-radius-2;
+  border:1px solid $surface-500;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 500px;
+}
+.HeaderWrapper{
+  overflow-x: hidden;
+  th{
+    border-left: 1px solid $surface-500;
+    border-bottom: 1px solid $surface-500;
+    padding: $gutter;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    &:first-child{
+      width: 10%;
+      background-color: $primary;
+
+    }
+    &:last-child{
+      border-left: unset;
+    }
+    color: #fff;
+    width: 18%;
+    text-align: center;
+    color: $surface-500;
+    font-size: $title6-fz;
+    font-weight: normal;
+
+  }
+}
+.row{
+  &:nth-child(even){
+    background-color: $light-surface;
+  }
+  td{
+    border-left: 1px solid $surface-500;
+    border-bottom: 1px solid $surface-500;
+    &:first-child{
+      width: 10%;
+    }
+    &:last-child{
+      border-left: unset;
+    }
+    text-align: center;
+    color: #fff;
+    width: 18%;
+    font-size: $title5-fz;
+    font-weight: 400;
+    padding: $gutter;
+  }
+
+}

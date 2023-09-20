@@ -1,0 +1,41 @@
+@import '/src/styles/variables.module';
+
+.Switch{
+  display: flex;
+  justify-content: space-between;
+  label{
+    font-size:14px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #ffffff;
+    display: block;
+  }
+  .switchParent{
+    display: none;
+  }
+  .box{
+    display: block;
+    width: 36px;
+    height: 18px;
+    background: #DDDDDD;
+    border-radius: 18px;
+    position: relative;
+    cursor: pointer;
+    span{
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #fff;
+      border-radius: 100%;
+      top: 2px;
+      right: 2px;
+      transition: transform 200ms;
+    }
+    &.box___checked{
+      background-color: red;
+      span{
+        transform: translateX(-18px);
+      }
+    }
+  }
+}

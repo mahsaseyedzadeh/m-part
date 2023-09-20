@@ -1,0 +1,58 @@
+@import './variables.module';
+
+@mixin unStyled-button {
+  background: #ffffff;
+  border: unset;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+
+}
+@mixin unStyled-list {
+  padding-right: unset;
+  list-style: none;
+}
+
+@mixin h1 {
+  font-family: IranYekan, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 150%;
+}
+@mixin h2 {
+  font-family: IranYekan, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 155%;
+}
+@mixin h3 {
+  font-family: IranYekan, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 180%;
+}
+@mixin h4 {
+  font-family: IranYekan, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+}
+
+@mixin container{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100% ;
+  padding: $gutter;
+
+  @media screen and (min-width: $small-size) {
+    max-width: 1336px;
+  }
+}
+
+@mixin error{
+  color: $red-color;
+}

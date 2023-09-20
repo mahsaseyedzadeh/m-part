@@ -1,0 +1,32 @@
+@import "src/styles/variables.module";
+.wrapper{
+  position: relative;
+
+  span{
+    transform: translateY(40%);
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url("/images/Search.png");
+    background-size: cover;
+    right: 22px;
+  }
+  input{
+    width:500px;
+    padding-right: $tripleGutter;
+      background: linear-gradient(200.68deg, #020B1F 0%, #0C132C 82.07%),
+    linear-gradient(206.57deg, #182040 0%, rgba(24, 32, 64, 0) 83.33%);
+    border: 1px solid;
+    border-image: linear-gradient(206.57deg, #182040 0%, rgba(24, 32, 64, 0) 100%);
+    border-radius: $border-radius-2;
+    color: $surface-500;
+    font-weight: 500;
+    font-size: $title4-fz;
+    line-height: 42px;
+    box-sizing: border-box;
+    &:focus{
+      outline:$surface-500 ;
+    }
+
+  }
+}
