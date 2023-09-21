@@ -1,0 +1,105 @@
+@import "/src/styles/variables.module";
+.wrapper{
+  display: flex;
+  justify-content: center;
+  padding:$doubleGutter $gutter;
+  flex-direction: column;
+  gap: $gutter;
+  width: 100%;
+  .title{
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: $title4-fz;
+    font-weight: 400;
+    padding-bottom: $gutter;
+    border-bottom: 1px solid $surface-300;
+
+  }
+  .imageWrapper{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    overflow:hidden;
+    border: 2px solid $primary;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    gap: $gutter;
+    input{
+      outline: none;
+      background-color:transparent;
+      border: 1px solid $surface-300;
+      color: #fff;
+      line-height: 32px;
+      padding: $halfGutter $gutter $halfGutter ;
+      border-radius: $border-radius-1;
+      font-size: $title5-fz;
+      width: 100%;
+    }
+    label{
+      display: block;
+      color: $surface-500;
+      font-size: $title5-fz;
+      font-weight: 400;
+      font-style: italic;
+      padding: $gutter  ;
+    }
+    .topBox{
+      display: flex;
+      flex-wrap: wrap;
+      .inputController{
+        width: 50%;
+        padding: $gutter ;
+
+      }
+    }
+    .bottomBox{
+      display: flex;
+      gap: $gutter;
+
+    }
+  }
+  .card{
+    background: linear-gradient(0deg, #020B1F, #020B1F),
+    linear-gradient(204.09deg, #182040 0%, rgba(24, 32, 64, 0) 84.55%);
+    border: 1px solid;
+    box-shadow: 24px 24px 96px 0px #0C132C;
+    border-image-source: linear-grad  ient(204.09deg, #182040 0%, rgba(24, 32, 64, 0) 84.55%);
+    min-height: 60vh;
+    min-width: 40%;
+    border-radius: $border-radius-2;
+  }
+}
+.buttonGroup{
+  display: flex;
+  gap:$gutter;
+}
+.editButton{
+  background-color: $primary!important;
+  width: 50% !important;
+
+}
+.removeButton{
+  background-color: $red-color;
+  outline: none;
+  border: 1px solid $surface-300;
+  color: #fff;
+  line-height: 32px;
+  padding: $halfGutter $gutter $halfGutter ;
+  border-radius: $border-radius-1;
+  font-size: $title5-fz;
+  width: 50%;
+}
+.errors{
+  color: #fff;
+  font-size: $title5-fz;
+  line-height: 32px;
+
+
+}

@@ -13,11 +13,11 @@ export const TableBody = ({children}) => {
     </tbody>
   )
 }
-export const Row = ({columns}) => {
+export const Row = ({columns ,handleClick}) => {
   return(
     <>
       {columns &&
-        <tr className={styles.row}>
+        <tr className={styles.row} onClick={()=>handleClick(columns.id)}>
             <td>
               {columns.name}
             </td>

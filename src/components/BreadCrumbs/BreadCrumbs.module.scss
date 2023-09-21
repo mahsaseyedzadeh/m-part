@@ -2,9 +2,25 @@
 
 .breadCrumbsWrapper{
   width: 100%;
-  padding: $gutter;
   color: $surface-500;
+  list-style: none;
+  display: flex;
+  padding: $doubleGutter 0;
   li{
-
+    position: relative;
+    padding-right: $doubleGutter;
+    display: flex;
+    align-items: center;
+    line-height: 26px;
+    &:before{
+      position: absolute;
+      right: $halfGutter;
+      top: 0;
+      content: '';
+      background-image: url("/images/Arrow-Left-1.png");
+      background-size: cover;
+      width: 10px;
+      height: 26px;
+    }
   }
 }

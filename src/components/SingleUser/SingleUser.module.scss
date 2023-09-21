@@ -1,0 +1,17 @@
+@import "src/styles/variables.module";
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $doubleGutter;
+  .card{
+    background: linear-gradient(0deg, #020B1F, #020B1F),
+    linear-gradient(204.09deg, #182040 0%, rgba(24, 32, 64, 0) 84.55%);
+    border: 1px solid;
+    box-shadow: 24px 24px 96px 0px #0C132C;
+    border-image-source: linear-gradient(204.09deg, #182040 0%, rgba(24, 32, 64, 0) 84.55%);
+    min-height: 60vh;
+    max-width: 40%;
+    border-radius: $border-radius-2;
+  }
+}
