@@ -10,7 +10,7 @@ const Header = () => {
         <Logo/>
         <div className={styles.leftSide}>
           <SearchBox/>
-          <SwitchTheme/>
+          <SwitchTheme onChange={()=>console.log("theme changed")}/>
         </div>
       </div>
 

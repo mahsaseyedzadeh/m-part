@@ -14,28 +14,51 @@
     display: none;
   }
   .box{
-    display: block;
-    width: 36px;
-    height: 18px;
-    background: #DDDDDD;
-    border-radius: 18px;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $halfGutter;
+    width: 70px;
+    height: 40px;
+    background: linear-gradient(204.51deg, #020B1F 0%, #0C132C 84.34%),
+    linear-gradient(206.57deg, #182040 0%, rgba(24, 32, 64, 0) 83.33%);
+    border-radius: 15px;
     cursor: pointer;
-    span{
-      position: absolute;
-      width: 14px;
-      height: 14px;
-      background-color: #fff;
-      border-radius: 100%;
-      top: 2px;
-      right: 2px;
-      transition: transform 200ms;
-    }
-    &.box___checked{
-      background-color: red;
+    border: 1px solid;
+    border-image-source: linear-gradient(206.57deg, #182040 0%, rgba(24, 32, 64, 0) 83.33%);
+    .darkTheme{
+      display: flex;
+      background-color: $primary;
+      width: 30px;
+      height: 30px;
+      background-size: cover;
+      border-radius: $border-radius-1;
+      align-items: center;
+      justify-content: center;
       span{
-        transform: translateX(-18px);
+        background-image: url("/images/Moon.png");
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        z-index: 100;
       }
+    }
+
+    .lightTheme{
+      display: flex;
+      transition: transform 200ms;
+      background-size: cover;
+      border-radius: $border-radius-1;
+      align-items: center;
+      justify-content: center;
+      span{
+        background-image: url("/images/Sun.png");
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        z-index: 100;
+      }
+
     }
   }
 }
