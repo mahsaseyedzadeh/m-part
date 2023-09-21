@@ -1,6 +1,6 @@
 @import "/src/styles/variables.module";
 .wrapper{
-  max-height: 500px;
   overflow-y: auto;
   overflow-x: hidden;
+  padding: $gutter;
 }

@@ -6,7 +6,8 @@
   border:1px solid $surface-500;
   overflow-x: hidden;
   overflow-y: auto;
-  max-height: 500px;
+  max-height: 70vh;
+  display: block;
 }
 .HeaderWrapper{
   overflow-x: hidden;

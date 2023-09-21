@@ -16,8 +16,6 @@ export const getUser = async (id) => {
   }
 };
 export const updateUser = async ( params ) => {
-  console.log('update api' +
-    'api te3st', params)
   try {
     const response = await Instance.put(`/users/${params.id}`,params.data);
     return response.data;
@@ -25,7 +23,6 @@ export const updateUser = async ( params ) => {
     throw error;
   }
 };
-
 
 export const deleteUser = async (id) => {
   try {
